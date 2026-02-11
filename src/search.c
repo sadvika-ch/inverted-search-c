@@ -13,10 +13,10 @@ void search_database(M_node *HT[])
     M_node *temp=HT[index];
     while(temp){
         if(strcmp(temp->word,word)==0){
-            printf(PINK"Word %s is present in  %d  time in file "RESET,word,temp->file_count);
+            printf(PINK"Word %s is present %d time in file "RESET,word,temp->file_count);
             S_node *stemp=temp->sub_link;
             while(stemp){
-                printf(PINK"%s %d times "RESET,stemp->filename,stemp->word_count);
+                printf(PINK"%s->%d times  "RESET,stemp->filename,stemp->word_count);
                 stemp=stemp->sub_link;
             }
             printf("\n");

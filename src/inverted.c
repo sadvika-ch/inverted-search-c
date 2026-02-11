@@ -73,6 +73,7 @@ int insert_last(F_node **head, char *f_name){
     temp->link = new;
     return SUCCESS;
 }
+
 int print_filenames(F_node *head){
     F_node *temp=head;
     printf(PURPLE"File list:\n");

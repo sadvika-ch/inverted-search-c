@@ -47,4 +47,3 @@ void save_database(M_node *HT[])
         printf(RED"EXTENTION OF FILE IS NEEDED\n"RESET);
          
 }
-
